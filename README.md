@@ -36,4 +36,18 @@ graph TD
     G -- Pass: Generate Report --> H[Final Markdown Report]
     G -- Fail: Missing Data / Hallucination --> B
 
+## ⚙️ Setup & Installation
+
+### Prerequisites
+- **Python:** 3.10 or 3.11
+- **API Keys:** OpenAI or Anthropic API Key, and a Tavily Search API Key
+
+---
+
+### Local Deployment
+
+#### 1. Clone the Repository
+```bash
+git clone [https://github.com/shreyakoranga80-hash/Multi-Agent-Research-System.git](https://github.com/shreyakoranga80-hash/Multi-Agent-Research-System.git)
+cd Multi-Agent-Research-System
 
