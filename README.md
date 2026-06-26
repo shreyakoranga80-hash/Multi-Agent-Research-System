@@ -36,6 +36,7 @@ graph TD
     G -- Pass: Generate Report --> H[Final Markdown Report]
     G -- Fail: Missing Data / Hallucination --> B
 
+
 ⚙️ Setup & Installation
 Prerequisites
 Python 3.10 or 3.11
@@ -67,33 +68,15 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
 pip install -r requirements.txt
 streamlit run src/ui/app.py
+
+
 🧪 Testing & Production Validation
 Run the test suite to validate agent state transitions and tool execution:
+
 
 Bash
 pytest tests/
 
 ---
 
-### Phase 2: Add 3 "Engineering-Level" Enhancements
-To prove to a hiring engineer that you didn't just copy a tutorial, implement these three industry-standard features into your codebase:
 
-1. **Structured Logging & Cost Tracking:** Don't just use `print()`. Implement Python's `logging` module. Add a utility that tracks the number of tokens consumed per research run so you can show recruiters you understand the *production costs* of LLMs.
-2. **Robust Exception Handling:** When a website blocks your scraper or an API times out, the system shouldn't crash. Wrap your tools in try-except blocks with **exponential backoff retries** (using libraries like `tenacity`).
-3. **Add a Basic CI/CD Pipeline:** Add a `.github/workflows/main.yml` file. This tells recruiters that your project follows proper software engineering workflows. 
-   *(Example GitHub Action content to drop into your repo):*
-   ```yaml
-   name: Python CI
-   on: [push, pull_request]
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-       steps:
-       - uses: actions/checkout@v3
-       - name: Set up Python
-         uses: actions/setup-python@v4
-         with: {python-version: '3.11'}
-       - name: Install dependencies
-         run: pip install -r requirements.txt
-       - name: Run Tests
-         run: pytest
