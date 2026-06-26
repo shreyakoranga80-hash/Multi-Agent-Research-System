@@ -35,6 +35,7 @@ graph TD
     F --> G[Auditor / Reviewer Agent]
     G -- Pass: Generate Report --> H[Final Markdown Report]
     G -- Fail: Missing Data / Hallucination --> B
+```
 **## ⚙️ Setup & Installation**
 
 ### Prerequisites
