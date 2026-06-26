@@ -35,8 +35,7 @@ graph TD
     F --> G[Auditor / Reviewer Agent]
     G -- Pass: Generate Report --> H[Final Markdown Report]
     G -- Fail: Missing Data / Hallucination --> B
-
-## ⚙️ Setup & Installation
+**## ⚙️ Setup & Installation**
 
 ### Prerequisites
 - **Python:** 3.10 or 3.11
