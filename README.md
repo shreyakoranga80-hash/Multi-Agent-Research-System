@@ -18,7 +18,6 @@ An enterprise-grade, multi-agent orchestration system that automates deep topica
 - **Core LLM Engines:** OpenAI GPT-4o / Anthropic Claude 3.5 Sonnet / Groq (Llama 3)
 - **Data Harvesting & Search:** Tavily API, BeautifulSoup4, Exa AI
 - **Frontend / Interface:** Streamlit (Custom styled UI with real-time process logs)
-- **DevOps & Infrastructure:** Docker, GitHub Actions (CI/CD)
 
 ## 📐 System Architecture
 
